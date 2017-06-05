@@ -1,6 +1,7 @@
 # Compiled class file
 *.class
-
+.idea/
+*.iml
 # Log file
 *.log
 
@@ -20,3 +21,20 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+.idea/*
+tut-project.iml
+tut-dubbo/tut-dubbo.iml
+
+ttarget/
+*.log*
+.DS_Store
+.logs/
+.settings/
+.classpath
+.project
+*.tmp
+*.tlog
+
+
+
+tut-dubbo/tut-dubbo.iml
