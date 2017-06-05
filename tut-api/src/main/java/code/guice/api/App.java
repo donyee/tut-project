@@ -1,4 +1,4 @@
-package code.guice.tut-project;
+package code.guice.api;
 
 /**
  * Hello world!

@@ -7,6 +7,7 @@
     <version>0.1</version>
     <modules>
         <module>tut-dubbo</module>
+        <module>tut-api</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -16,7 +17,34 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring.version>4.3.7.RELEASE</spring.version>
+        <spring.boot.version>1.5.2.RELEASE</spring.boot.version>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot</artifactId>
+            <version>${spring.boot.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>${spring.boot.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-tomcat</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-undertow</artifactId>
+            <version>${spring.boot.version}</version>
+        </dependency>
+
+    </dependencies>
 
 </project>
 
